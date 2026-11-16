@@ -40,10 +40,9 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .nav {
   position: sticky; top: 0; z-index: 100;
   height: var(--nav-h);
-  background: rgba(255, 255, 255, .85);
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  background: #ffffff;
   border-bottom: 1px solid rgba(0, 0, 0, .08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, .04);
   color: var(--ink);
 }
 .nav__inner {
@@ -51,8 +50,9 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
 .nav__logo { display: flex; align-items: center; flex-shrink: 0; }
-.nav__logo img { height: 54px; width: auto; }
-.nav__links { display: flex; gap: 28px; font-size: 13px; }
+.nav__logo img { height: 54px !important; width: auto; max-width: 50vw; object-fit: contain; }
+.nav__links { display: flex; gap: 28px; font-size: 13px; white-space: nowrap; }
+@media (max-width: 1000px) { .nav__links { gap: 16px; } }
 .nav__links a { opacity: .8; transition: opacity .2s, color .2s; }
 .nav__links a:hover { opacity: 1; color: var(--blue); }
 .nav__cta {
@@ -456,7 +456,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   .nav__links a { padding: 12px 0; opacity: 1; }
   .nav.open .nav__links { transform: none; }
   .nav__burger { display: block; }
-  .nav__logo img { height: 46px; }
+  .nav__logo img { height: 46px !important; }
   .nav__cta { margin-left: auto; }
   .grid-tiles { grid-template-columns: 1fr; padding: 12px 0; }
   .tile { min-height: 600px; }

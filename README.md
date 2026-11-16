@@ -13,7 +13,7 @@ Center_Website/
 │   └── main.js             ← AI network background, typing code, carousel, counters, WhatsApp form
 ├── assets/
 │   ├── favicon.png         ← browser tab icon (from the logo)
-│   └── images/             ← logo.png + your academy photos
+│   └── images/             ← logo-white.png + your academy photos
 │       ├── lab-overview.jpg      lab-classroom.jpg
 │       ├── career-session.jpg    ai-seminar.jpg
 │       ├── live-ai-demo.jpg      code-mentoring.jpg
