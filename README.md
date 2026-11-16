@@ -20,7 +20,11 @@ Center_Website/
 │       ├── python-student.jpg    vscode-students.jpg
 │       ├── girls-batch.jpg       girls-session.jpg
 │       └── girls-pair.jpg
+├── sw.js               ← Monetag service worker (must stay at the site root, named sw.js)
+├── CNAME               ← custom domain for GitHub Pages
 └── README.md
+
+Monetag ad tag (zone 311000) is in the <head> of index.html.
 ```
 
 ## Before going live, edit these
