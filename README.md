@@ -12,8 +12,8 @@ Center_Website/
 ├── js/
 │   └── main.js             ← AI network background, typing code, carousel, counters, WhatsApp form
 ├── assets/
-│   ├── favicon.svg
-│   └── images/             ← your academy photos
+│   ├── favicon.png         ← browser tab icon (from the logo)
+│   └── images/             ← logo.png + your academy photos
 │       ├── lab-overview.jpg      lab-classroom.jpg
 │       ├── career-session.jpg    ai-seminar.jpg
 │       ├── live-ai-demo.jpg      code-mentoring.jpg
@@ -25,8 +25,8 @@ Center_Website/
 
 ## Before going live, edit these
 
-1. **WhatsApp number**: in `js/main.js`, line 6, set `WHATSAPP_NUMBER` (e.g. `923001234567`, digits only, no `+` or `0` prefix).
-2. **Phone, address and hours**: in `index.html`, search for `TODO` in the Contact section.
+1. **WhatsApp**: already set to 0333-7338578 (`WHATSAPP_NUMBER` in `js/main.js`, plus the `wa.me` / `tel:` links in `index.html`). To change it, update all of these.
+2. **Address and hours**: in `index.html`, search for `TODO` in the Contact section.
 3. **Stats**: in `index.html`, search for `data-count`. Change 500 / 7 / 100 to your real numbers.
 4. **Social links**: in the footer, replace the `href="#"` on Facebook / Instagram / YouTube.
 

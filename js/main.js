@@ -2,8 +2,14 @@
    IT Track Institute — interactions
    ========================================================= */
 
-// ---- EDIT THIS: your WhatsApp number in international format, digits only ----
-const WHATSAPP_NUMBER = "920000000000";
+// WhatsApp number in international format, digits only (0333-7338578 -> 923337338578)
+const WHATSAPP_NUMBER = "923337338578";
+
+function openWhatsApp(text) {
+  const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
+  const win = window.open(url, "_blank");
+  if (!win) window.location.href = url; // popup blocked (some mobile browsers)
+}
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
@@ -173,11 +179,24 @@ Course: ${d.get("course")}
 Batch: ${d.get("batch")}
 
 Please share fees and timings.`;
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank");
+  openWhatsApp(msg);
 });
 
-/* floating button opens a general WhatsApp chat */
-document.getElementById("waFloat").addEventListener("click", e => {
+/* floating button + contact link open a general WhatsApp chat */
+document.querySelectorAll("#waFloat, [data-wa]").forEach(a => a.addEventListener("click", e => {
   e.preventDefault();
-  window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent("Assalam o Alaikum! I want to know about your courses.")}`, "_blank");
-});
+  openWhatsApp("Assalam o Alaikum IT Track Institute! I want to know about your courses.");
+}));
+
+/* course "Enroll" buttons open WhatsApp with that course name filled in */
+document.querySelectorAll(".card .btn--primary, .mini .btn--primary, .mini .btn--white, .tile__copy .btn--primary")
+  .forEach(btn => {
+    const box = btn.closest(".card, .mini, .tile__copy");
+    const heading = box && box.querySelector("h1, h2, h3");
+    if (!heading) return;
+    const course = heading.textContent.replace(/\s+/g, " ").trim();
+    btn.addEventListener("click", e => {
+      e.preventDefault();
+      openWhatsApp(`Assalam o Alaikum IT Track Institute!\nI want to enroll in: ${course}.\nPlease share fees, timings and the next batch date.`);
+    });
+  });
