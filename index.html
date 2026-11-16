@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Track Institute — Learn AI, Code & Design</title>
+  <meta name="description" content="IT Track Institute — Agentic AI, Machine Learning, Python, App & Web Development, DIT and MS Office courses. Hands-on, project-based learning." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+
+  <!-- ================= NAV ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo" aria-label="IT Track Institute home">
+        <span class="logo-mark">IT</span><span class="logo-text">Track Institute</span>
+      </a>
+      <nav class="nav__links" id="navLinks">
+        <a href="#ai">Agentic AI</a>
+        <a href="#ml">Machine Learning</a>
+        <a href="#courses">Courses</a>
+        <a href="#campus">Campus</a>
+        <a href="#why">Why Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="nav__cta">Enroll</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ribbon -->
+  <div class="ribbon" id="top">
+    New batch of <strong>AI Agents &amp; Agentic AI</strong> is now enrolling. <a href="#contact">Reserve your seat ›</a>
+  </div>
+
+  <main>
+
+    <!-- ================= HERO : AGENTIC AI ================= -->
+    <section class="tile tile--dark tile--hero" id="ai">
+      <canvas id="neural" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="tile__copy reveal">
+        <p class="eyebrow eyebrow--grad">Flagship · 8 Months</p>
+        <h1 class="tile__title">AI Agents &amp; <span class="grad-text">Agentic AI</span></h1>
+        <p class="tile__sub">From Python to production-grade super agents.</p>
+        <div class="tile__ctas">
+          <a href="#contact" class="btn btn--primary">Enroll now</a>
+          <a href="#ai-path" class="btn btn--link">See the roadmap ›</a>
+        </div>
+      </div>
+
+      <!-- animated agent graph -->
+      <div class="agent-graph reveal" aria-hidden="true">
+        <svg viewBox="0 0 640 260" class="agent-graph__svg">
+          <defs>
+            <linearGradient id="gLine" x1="0" x2="1">
+              <stop offset="0" stop-color="#2997ff"/><stop offset="1" stop-color="#bf5af2"/>
+            </linearGradient>
+          </defs>
+          <path class="flow" d="M80 130 C 160 40, 220 40, 260 130 S 380 220, 420 130 S 520 40, 570 130" />
+          <path class="flow flow--2" d="M80 130 C 160 220, 220 220, 260 130 S 380 40, 420 130 S 520 220, 570 130" />
+        </svg>
+        <div class="node" style="--x:12%;--d:0s"><span>🐍</span>Python</div>
+        <div class="node" style="--x:40%;--d:.4s"><span>🧠</span>Python for AI</div>
+        <div class="node" style="--x:66%;--d:.8s"><span>🕸️</span>LangGraph</div>
+        <div class="node node--glow" style="--x:89%;--d:1.2s"><span>🚀</span>Super Agents</div>
+      </div>
+    </section>
+
+    <!-- AI roadmap strip -->
+    <section class="roadmap" id="ai-path">
+      <div class="container">
+        <h2 class="section-title reveal">The Agentic AI roadmap.</h2>
+        <p class="section-sub reveal">Eight months. Four stages. One goal — ship real AI agents.</p>
+        <div class="roadmap__grid">
+          <article class="step reveal">
+            <span class="step__num">01</span>
+            <h3>Python</h3>
+            <p>Syntax, data structures, OOP, files, APIs — a rock-solid foundation.</p>
+            <span class="step__time">Months 1–2</span>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">02</span>
+            <h3>Python for AI</h3>
+            <p>LLM APIs, prompt design, embeddings, vector databases and RAG.</p>
+            <span class="step__time">Months 3–4</span>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">03</span>
+            <h3>LangGraph</h3>
+            <p>Stateful, multi-step agents with tools, memory and human-in-the-loop.</p>
+            <span class="step__time">Months 5–6</span>
+          </article>
+          <article class="step reveal">
+            <span class="step__num">04</span>
+            <h3>Super Agents &amp; Production</h3>
+            <p>Multi-agent systems, deployment, monitoring — and a portfolio project.</p>
+            <span class="step__time">Months 7–8</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ML TILE ================= -->
+    <section class="tile tile--light" id="ml">
+      <div class="tile__copy reveal">
+        <p class="eyebrow">6 Months</p>
+        <h2 class="tile__title">Machine Learning</h2>
+        <p class="tile__sub">Teach machines to learn from data.</p>
+        <div class="tile__ctas">
+          <a href="#contact" class="btn btn--primary">Enroll now</a>
+          <a href="#courses" class="btn btn--link">Learn more ›</a>
+        </div>
+      </div>
+      <div class="ml-visual reveal" aria-hidden="true">
+        <div class="ml-chips">
+          <span>Python</span><span>NumPy</span><span>pandas</span><span>Scikit-Learn</span>
+        </div>
+        <svg viewBox="0 0 520 260" class="ml-chart">
+          <g class="grid">
+            <line x1="40" y1="220" x2="500" y2="220"/><line x1="40" y1="20" x2="40" y2="220"/>
+          </g>
+          <g class="dots">
+            <circle cx="70" cy="200" r="6"/><circle cx="110" cy="185" r="6"/><circle cx="140" cy="190" r="6"/>
+            <circle cx="180" cy="160" r="6"/><circle cx="215" cy="150" r="6"/><circle cx="250" cy="138" r="6"/>
+            <circle cx="290" cy="120" r="6"/><circle cx="320" cy="112" r="6"/><circle cx="360" cy="90" r="6"/>
+            <circle cx="400" cy="82" r="6"/><circle cx="435" cy="60" r="6"/><circle cx="470" cy="48" r="6"/>
+          </g>
+          <path class="fit" d="M60 205 L 480 45"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- ================= COURSE GRID (Apple product tiles) ================= -->
+    <section class="grid-tiles" id="courses">
+
+      <!-- DIT -->
+      <article class="mini mini--dark reveal">
+        <p class="eyebrow eyebrow--gold">1 Year Diploma</p>
+        <h3 class="mini__title">DIT</h3>
+        <p class="mini__sub">Everything you need to start an IT career.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary btn--sm">Enroll</a><a href="#dit-detail" class="btn btn--link">Details ›</a></div>
+        <div class="orbit" aria-hidden="true">
+          <div class="orbit__core">DIT</div>
+          <span class="orbit__item" style="--i:0">Office</span>
+          <span class="orbit__item" style="--i:1">Web</span>
+          <span class="orbit__item" style="--i:2">Apps</span>
+          <span class="orbit__item" style="--i:3">Design</span>
+          <span class="orbit__item" style="--i:4">AI</span>
+          <span class="orbit__item" style="--i:5">Freelance</span>
+        </div>
+      </article>
+
+      <!-- Python -->
+      <article class="mini mini--light reveal">
+        <p class="eyebrow">Basic → Advanced</p>
+        <h3 class="mini__title">Python Programming</h3>
+        <p class="mini__sub">The language of AI, data and automation.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary btn--sm">Enroll</a><a href="#contact" class="btn btn--link">Learn more ›</a></div>
+        <div class="code-window" aria-hidden="true">
+          <div class="code-window__bar"><i></i><i></i><i></i><span>agent.py</span></div>
+          <pre class="code-window__body"><code id="typeCode"></code><span class="caret"></span></pre>
+        </div>
+      </article>
+
+      <!-- App Dev -->
+      <article class="mini mini--blue reveal">
+        <p class="eyebrow eyebrow--light">6 Months</p>
+        <h3 class="mini__title">App Development</h3>
+        <p class="mini__sub">Dart &amp; Flutter. One codebase. Every phone.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--white btn--sm">Enroll</a><a href="#contact" class="btn btn--link btn--link-light">Learn more ›</a></div>
+        <div class="phone" aria-hidden="true">
+          <div class="phone__notch"></div>
+          <div class="phone__screen">
+            <div class="app-card a1"></div>
+            <div class="app-card a2"></div>
+            <div class="app-row"><span></span><span></span><span></span></div>
+            <div class="app-card a3"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Web Dev -->
+      <article class="mini mini--light reveal">
+        <p class="eyebrow">2 Months</p>
+        <h3 class="mini__title">Web Development</h3>
+        <p class="mini__sub">Vibe coding, no-code &amp; low-code. Ship sites fast.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary btn--sm">Enroll</a><a href="#contact" class="btn btn--link">Learn more ›</a></div>
+        <div class="browser" aria-hidden="true">
+          <div class="browser__bar"><i></i><i></i><i></i><span class="browser__url">yourname.site</span></div>
+          <div class="browser__body">
+            <div class="b-hero"></div>
+            <div class="b-cols"><span></span><span></span><span></span></div>
+            <div class="b-prompt">✨ “make the hero bigger” <b></b></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Basic 4 Months -->
+      <article class="mini mini--warm reveal">
+        <p class="eyebrow">4 Months · Beginners</p>
+        <h3 class="mini__title">Basic Computer</h3>
+        <p class="mini__sub">MS Office Automation + Prompt Engineering.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary btn--sm">Enroll</a><a href="#contact" class="btn btn--link">Learn more ›</a></div>
+        <div class="office" aria-hidden="true">
+          <div class="office__app w">W</div>
+          <div class="office__app x">X</div>
+          <div class="office__app p">P</div>
+          <div class="office__prompt"><span>Prompt:</span> summarize this sheet<em></em></div>
+        </div>
+      </article>
+
+      <!-- More -->
+      <article class="mini mini--dark reveal">
+        <p class="eyebrow eyebrow--grad">And more</p>
+        <h3 class="mini__title">Graphic Design. Freelancing. Basic AI.</h3>
+        <p class="mini__sub">Skills that turn into income.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary btn--sm">Ask us</a></div>
+        <div class="marquee" aria-hidden="true">
+          <div class="marquee__track">
+            <span>Canva</span><span>Photoshop</span><span>Fiverr</span><span>Upwork</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Illustrator</span>
+            <span>Canva</span><span>Photoshop</span><span>Fiverr</span><span>Upwork</span><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Illustrator</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- ================= ALL COURSES CAROUSEL ================= -->
+    <section class="carousel-section">
+      <div class="container">
+        <h2 class="section-title reveal">Find your course.</h2>
+        <div class="filters reveal" role="tablist">
+          <button class="filter is-active" data-filter="all">All</button>
+          <button class="filter" data-filter="ai">AI &amp; Data</button>
+          <button class="filter" data-filter="dev">Development</button>
+          <button class="filter" data-filter="start">Get Started</button>
+        </div>
+      </div>
+      <div class="carousel" id="carousel">
+        <article class="card card--ai" data-cat="ai">
+          <span class="badge">Most popular</span>
+          <div class="card__icon">🤖</div>
+          <h3>AI Agents &amp; Agentic AI</h3>
+          <p class="card__dur">8 months</p>
+          <ul><li>Python</li><li>Python for AI</li><li>LangGraph</li><li>Super Agents</li><li>Production deployment</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card" data-cat="ai">
+          <div class="card__icon">📈</div>
+          <h3>Machine Learning</h3>
+          <p class="card__dur">6 months</p>
+          <ul><li>Python</li><li>NumPy</li><li>pandas</li><li>Scikit-Learn</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card" data-cat="ai dev">
+          <div class="card__icon">🐍</div>
+          <h3>Python Programming</h3>
+          <p class="card__dur">Basic → Advanced</p>
+          <ul><li>Core Python</li><li>OOP</li><li>Files &amp; APIs</li><li>Projects</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card" data-cat="dev">
+          <div class="card__icon">📱</div>
+          <h3>App Development</h3>
+          <p class="card__dur">6 months</p>
+          <ul><li>Dart</li><li>Flutter</li><li>Firebase</li><li>Play Store publishing</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card" data-cat="dev">
+          <div class="card__icon">🌐</div>
+          <h3>Web Development</h3>
+          <p class="card__dur">2 months</p>
+          <ul><li>Vibe Coding</li><li>No-Code</li><li>Low-Code</li><li>Deploy your site</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card card--gold" data-cat="start dev" id="dit-detail">
+          <span class="badge badge--gold">Diploma</span>
+          <div class="card__icon">🎓</div>
+          <h3>DIT — 1 Year</h3>
+          <p class="card__dur">12 months</p>
+          <ul><li>MS Office Automation</li><li>App / Web Development</li><li>Prompt Engineering</li><li>Graphic Design</li><li>Basic AI</li><li>Freelancing &amp; more</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+        <article class="card" data-cat="start">
+          <div class="card__icon">💼</div>
+          <h3>Basic Course</h3>
+          <p class="card__dur">4 months</p>
+          <ul><li>MS Office Automation</li><li>Prompt Engineering</li></ul>
+          <a href="#contact" class="btn btn--primary btn--sm">Enroll</a>
+        </article>
+      </div>
+      <div class="carousel__nav container">
+        <button class="arrow" id="prev" aria-label="Previous">‹</button>
+        <button class="arrow" id="next" aria-label="Next">›</button>
+      </div>
+    </section>
+
+    <!-- ================= CAMPUS (real photos) ================= -->
+    <section class="campus" id="campus">
+      <div class="container">
+        <h2 class="section-title reveal">Real classrooms.<br/><span class="muted">Real projects.</span></h2>
+        <p class="section-sub reveal">Hands-on labs, live AI demos and career sessions — every single week.</p>
+      </div>
+
+      <div class="bento container">
+        <figure class="bento__item bento__item--wide reveal">
+          <img src="assets/images/lab-overview.jpg" alt="Students working on laptops in the IT Track computer lab" loading="lazy" />
+          <figcaption>Our main computer lab</figcaption>
+        </figure>
+        <figure class="bento__item bento__item--tall reveal">
+          <img src="assets/images/career-session.jpg" alt="Instructor leading a career self-assessment session" loading="lazy" />
+          <figcaption>Career guidance sessions</figcaption>
+        </figure>
+        <figure class="bento__item reveal">
+          <img src="assets/images/code-mentoring.jpg" alt="Instructor mentoring students on Python code" loading="lazy" />
+          <figcaption>1-on-1 code mentoring</figcaption>
+        </figure>
+        <figure class="bento__item reveal">
+          <img src="assets/images/python-student.jpg" alt="Student writing Python in VS Code" loading="lazy" />
+          <figcaption>Python in VS Code</figcaption>
+        </figure>
+        <figure class="bento__item bento__item--tall reveal">
+          <img src="assets/images/ai-seminar.jpg" alt="AI seminar with instructor presenting on a large screen" loading="lazy" />
+          <figcaption>AI seminars</figcaption>
+        </figure>
+        <figure class="bento__item bento__item--wide reveal">
+          <img src="assets/images/live-ai-demo.jpg" alt="Live AI tools demo on the classroom screen" loading="lazy" />
+          <figcaption>Live AI tool demos</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ================= GIRLS BATCH ================= -->
+    <section class="tile tile--split">
+      <div class="split__media reveal">
+        <img src="assets/images/girls-batch.jpg" alt="Female students learning in a dedicated batch" loading="lazy" />
+        <img src="assets/images/girls-session.jpg" alt="Female students attending an AI session" loading="lazy" class="split__media-2" />
+      </div>
+      <div class="split__copy reveal">
+        <p class="eyebrow">For girls</p>
+        <h2 class="tile__title">Dedicated batches.<br/>Same big ambitions.</h2>
+        <p class="tile__sub">Separate, comfortable classes for female students — with the same AI, coding and freelancing curriculum.</p>
+        <div class="tile__ctas"><a href="#contact" class="btn btn--primary">Ask about timings</a></div>
+      </div>
+    </section>
+
+    <!-- ================= STATS / WHY ================= -->
+    <section class="why" id="why">
+      <div class="container">
+        <h2 class="section-title reveal">Why IT Track.</h2>
+        <div class="stats">
+          <div class="stat reveal"><b data-count="500">0</b><span>+ students trained</span></div>
+          <div class="stat reveal"><b data-count="7">0</b><span>+ career tracks</span></div>
+          <div class="stat reveal"><b data-count="100">0</b><span>% practical labs</span></div>
+          <div class="stat reveal"><b data-count="1">0</b><span>:1 mentor support</span></div>
+        </div>
+        <div class="features">
+          <div class="feature reveal"><span>🧪</span><h3>Learn by building</h3><p>Every class ends with something running on your own laptop.</p></div>
+          <div class="feature reveal"><span>🤖</span><h3>AI-first curriculum</h3><p>Modern tools — LLMs, agents, vibe coding — built into every course.</p></div>
+          <div class="feature reveal"><span>💸</span><h3>Freelance-ready</h3><p>Portfolio, Fiverr and Upwork guidance so skills turn into income.</p></div>
+          <div class="feature reveal"><span>🎯</span><h3>Career guidance</h3><p>Self-assessment and roadmap sessions to choose the right path.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- full-bleed photo -->
+    <section class="photo-band">
+      <img src="assets/images/lab-classroom.jpg" alt="Full IT Track classroom with students coding" loading="lazy" class="parallax" />
+      <div class="photo-band__text reveal">
+        <h2>Your seat is waiting.</h2>
+        <a href="#contact" class="btn btn--white">Join the next batch</a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="contact" id="contact">
+      <div class="container contact__grid">
+        <div class="contact__info reveal">
+          <h2 class="section-title">Enroll today.</h2>
+          <p class="section-sub left">Send us your details and we'll reply on WhatsApp with fees, timings and the next batch date.</p>
+          <ul class="contact__list">
+            <!-- TODO: replace with your real details -->
+            <li><span>📍</span> Your full address here</li>
+            <li><span>📞</span> <a href="tel:+920000000000" id="phoneLink">+92 300 0000000</a></li>
+            <li><span>✉️</span> <a href="mailto:ittrackinstitute@gmail.com">ittrackinstitute@gmail.com</a></li>
+            <li><span>🕘</span> Mon – Sat · 9:00 AM – 9:00 PM</li>
+          </ul>
+        </div>
+        <form class="form reveal" id="enrollForm">
+          <label>Full name<input type="text" name="name" required placeholder="Your name" /></label>
+          <label>Phone / WhatsApp<input type="tel" name="phone" required placeholder="03xx xxxxxxx" /></label>
+          <label>Course
+            <select name="course" required>
+              <option value="AI Agents & Agentic AI (8 Months)">AI Agents &amp; Agentic AI — 8 Months</option>
+              <option value="Machine Learning (6 Months)">Machine Learning — 6 Months</option>
+              <option value="Python Programming">Python Programming — Basic to Advanced</option>
+              <option value="App Development (6 Months)">App Development — 6 Months</option>
+              <option value="Web Development (2 Months)">Web Development — 2 Months</option>
+              <option value="DIT (1 Year)">DIT — 1 Year</option>
+              <option value="Basic Course (4 Months)">Basic — 4 Months</option>
+            </select>
+          </label>
+          <label>Batch
+            <select name="batch"><option>Boys</option><option>Girls</option></select>
+          </label>
+          <button class="btn btn--primary btn--block" type="submit">Send on WhatsApp</button>
+          <p class="form__note">Opens WhatsApp with your message ready to send.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__cols">
+        <div><h4>Courses</h4><a href="#ai">Agentic AI</a><a href="#ml">Machine Learning</a><a href="#courses">Python</a><a href="#courses">App Development</a><a href="#courses">Web Development</a></div>
+        <div><h4>Programs</h4><a href="#dit-detail">DIT — 1 Year</a><a href="#courses">Basic — 4 Months</a><a href="#courses">Graphic Design</a><a href="#courses">Freelancing</a></div>
+        <div><h4>Institute</h4><a href="#campus">Campus</a><a href="#why">Why Us</a><a href="#contact">Contact</a></div>
+        <div><h4>Follow</h4><a href="#" target="_blank" rel="noopener">Facebook</a><a href="#" target="_blank" rel="noopener">Instagram</a><a href="#" target="_blank" rel="noopener">YouTube</a></div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> IT Track Institute. All rights reserved.</span>
+        <span>Learn. Build. Earn.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- floating WhatsApp -->
+  <a class="wa-float" id="waFloat" href="#contact" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28"><path fill="#fff" d="M16 3C9 3 3.3 8.6 3.3 15.6c0 2.4.7 4.7 1.9 6.7L3 29l6.9-2.2c1.9 1 4 1.6 6.1 1.6 7 0 12.7-5.6 12.7-12.6S23 3 16 3zm0 23.1c-1.9 0-3.8-.5-5.4-1.5l-.4-.2-4.1 1.3 1.3-4-.3-.4c-1.1-1.7-1.7-3.6-1.7-5.6C5.4 9.8 10.1 5.1 16 5.1s10.6 4.7 10.6 10.5S21.9 26.1 16 26.1zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1-.3-.2-1.3-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.4 3.4c.2.2 2.4 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.6.2 2.2.1.7-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
